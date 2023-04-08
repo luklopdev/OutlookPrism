@@ -1,5 +1,7 @@
-﻿using OutlookPrism.Views;
+﻿using OutlookPrism.Modules.Mail;
+using OutlookPrism.Views;
 using Prism.Ioc;
+using Prism.Modularity;
 using System.Windows;
 
 namespace OutlookPrism
@@ -17,6 +19,11 @@ namespace OutlookPrism
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
 
+        }
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            moduleCatalog.AddModule<MailModule>();
         }
     }
 }
