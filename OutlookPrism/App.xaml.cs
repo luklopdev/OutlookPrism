@@ -1,7 +1,11 @@
-﻿using OutlookPrism.Modules.Mail;
+﻿using Infragistics.Windows.OutlookBar;
+using Infragistics.Windows.Ribbon;
+using OutlookPrism.Modules.Mail;
+using OutlookPrism.Regions;
 using OutlookPrism.Views;
 using Prism.Ioc;
 using Prism.Modularity;
+using Prism.Regions;
 using System.Windows;
 
 namespace OutlookPrism
@@ -24,6 +28,13 @@ namespace OutlookPrism
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             moduleCatalog.AddModule<MailModule>();
+        }
+
+        protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
+        {
+            base.ConfigureRegionAdapterMappings(regionAdapterMappings);
+            regionAdapterMappings.RegisterMapping(typeof(XamOutlookBar), Container.Resolve<XamOutlookBarRegionAdapter>());
+            regionAdapterMappings.RegisterMapping(typeof(XamRibbon), Container.Resolve<XamRibbonRegionAdapter>());
         }
     }
 }
