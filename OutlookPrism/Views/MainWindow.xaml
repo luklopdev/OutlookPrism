@@ -5,24 +5,24 @@
         prism:ViewModelLocator.AutoWireViewModel="True"
         xmlns:ig="http://schemas.infragistics.com/xaml/wpf"
         xmlns:core="clr-namespace:OutlookPrism.Core;assembly=OutlookPrism.Core"
-        Title="{Binding Title}" Height="350" Width="525" >
+        Title="{Binding Title}" Height="455" Width="860" >
     <Grid>
         <ig:RibbonWindowContentHost>
             <ig:RibbonWindowContentHost.Ribbon>
                 <ig:XamRibbon prism:RegionManager.RegionName="{x:Static core:RegionNames.RibbonRegion}">
-                    
+
                 </ig:XamRibbon>
             </ig:RibbonWindowContentHost.Ribbon>
 
             <DockPanel LastChildFill="True">
                 <ig:XamOutlookBar prism:RegionManager.RegionName="{x:Static core:RegionNames.OutlookGroupRegion}" 
                                   DockPanel.Dock="Left" Width="200"></ig:XamOutlookBar>
-                
+
                 <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}"/>
             </DockPanel>
-            
+
         </ig:RibbonWindowContentHost>
 
-        
+
     </Grid>
 </ig:XamRibbonWindow>

@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OutlookPrism.Core\OutlookPrism.Core.csproj" />
+    <ProjectReference Include="..\OutlookPrism.Modules.Contacts\OutlookPrism.Modules.Contacts.csproj" />
     <ProjectReference Include="..\OutlookPrism.Modules.Mail\OutlookPrism.Modules.Mail.csproj" />
   </ItemGroup>
 </Project>

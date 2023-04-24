@@ -1,5 +1,6 @@
 ﻿using Infragistics.Windows.OutlookBar;
 using Infragistics.Windows.Ribbon;
+using OutlookPrism.Modules.Contacts;
 using OutlookPrism.Modules.Mail;
 using OutlookPrism.Regions;
 using OutlookPrism.Views;
@@ -28,6 +29,7 @@ namespace OutlookPrism
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             moduleCatalog.AddModule<MailModule>();
+            moduleCatalog.AddModule<ContactsModule>();
         }
 
         protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
