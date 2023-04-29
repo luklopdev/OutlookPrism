@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:local="clr-namespace:OutlookPrism.Modules.Mail.Menus"
              xmlns:ig="http://schemas.infragistics.com/xaml/wpf" 
-             Header="Home">
+             Header="Mail">
 
     <ig:RibbonGroup Caption="New">
         <ig:ToolHorizontalWrapPanel>

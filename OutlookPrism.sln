@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookPrism", "OutlookPrism\OutlookPrism.csproj", "{A855AD54-9E32-4DB8-A281-654549E7EE24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutlookPrism", "OutlookPrism\OutlookPrism.csproj", "{A855AD54-9E32-4DB8-A281-654549E7EE24}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{1E55D833-DA76-45D0-BE6A-1B890049C5E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookPrism.Modules.Mail", "OutlookPrism.Modules.Mail\OutlookPrism.Modules.Mail.csproj", "{D9C4602A-5D85-4B31-9563-FA8DE59095BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutlookPrism.Modules.Mail", "OutlookPrism.Modules.Mail\OutlookPrism.Modules.Mail.csproj", "{D9C4602A-5D85-4B31-9563-FA8DE59095BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookPrism.Modules.Contacts", "OutlookPrism.Modules.Contacts\OutlookPrism.Modules.Contacts.csproj", "{79D14E5C-A331-4325-9574-FB96C8484F56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutlookPrism.Modules.Contacts", "OutlookPrism.Modules.Contacts\OutlookPrism.Modules.Contacts.csproj", "{79D14E5C-A331-4325-9574-FB96C8484F56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookPrism.Modules.Calendar", "OutlookPrism.Modules.Calendar\OutlookPrism.Modules.Calendar.csproj", "{1E57D31D-4176-44C0-9AB4-74C05C07A83A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutlookPrism.Modules.Calendar", "OutlookPrism.Modules.Calendar\OutlookPrism.Modules.Calendar.csproj", "{1E57D31D-4176-44C0-9AB4-74C05C07A83A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookPrism.Core", "OutlookPrism.Core\OutlookPrism.Core.csproj", "{3BCF0633-5961-43BA-B730-93BCA1829200}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutlookPrism.Core", "OutlookPrism.Core\OutlookPrism.Core.csproj", "{3BCF0633-5961-43BA-B730-93BCA1829200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookPrism.Business", "OutlookPrism.Business\OutlookPrism.Business.csproj", "{18212C60-58B3-40C3-B458-46466B174F28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{3BCF0633-5961-43BA-B730-93BCA1829200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BCF0633-5961-43BA-B730-93BCA1829200}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BCF0633-5961-43BA-B730-93BCA1829200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18212C60-58B3-40C3-B458-46466B174F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18212C60-58B3-40C3-B458-46466B174F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18212C60-58B3-40C3-B458-46466B174F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18212C60-58B3-40C3-B458-46466B174F28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

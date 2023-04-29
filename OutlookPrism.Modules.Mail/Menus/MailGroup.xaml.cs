@@ -1,4 +1,6 @@
 ﻿using Infragistics.Windows.OutlookBar;
+using OutlookPrism.Business;
+using OutlookPrism.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,11 +21,23 @@ namespace OutlookPrism.Modules.Mail.Menus
     /// <summary>
     /// Interaction logic for MailGroup.xaml
     /// </summary>
-    public partial class MailGroup : OutlookBarGroup
+    public partial class MailGroup : OutlookBarGroup, IOutlookBarGroup
     {
         public MailGroup()
         {
             InitializeComponent();
+        }
+
+        public string DefaultNavigationPath
+        {
+            get
+            {
+                var item = _dataTree.SelectedDataItems?.FirstOrDefault() as NavigationItem;
+                if (item != null)
+                    return item.NavigationPath;
+
+                return "MailList";
+            }
         }
     }
 }

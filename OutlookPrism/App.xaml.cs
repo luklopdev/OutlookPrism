@@ -1,5 +1,6 @@
 ﻿using Infragistics.Windows.OutlookBar;
 using Infragistics.Windows.Ribbon;
+using OutlookPrism.Core;
 using OutlookPrism.Modules.Contacts;
 using OutlookPrism.Modules.Mail;
 using OutlookPrism.Regions;
@@ -23,7 +24,7 @@ namespace OutlookPrism
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
+            containerRegistry.RegisterSingleton<IApplicationCommands, ApplicationCommands>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
